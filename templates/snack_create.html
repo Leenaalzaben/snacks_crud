@@ -3,12 +3,18 @@
 {% block content%}
 <h1> Create new snacks!</h1>
 
-<form method="post">
+<form  method="post">
     {% csrf_token %}
-    <!-- render it as paragraph -->
     {{form.as_p}}
-    <input type="submit" />
+    <input type="submit", value="Add">
 </form>
 <br>
-<button><a href="{% url 'snacks_list'%}">back</a></button>
+<button><a href="{% url 'snacks_list'%}">Back</a></button>
 {% endblock content%}
+
+
+
+
+
+
+
