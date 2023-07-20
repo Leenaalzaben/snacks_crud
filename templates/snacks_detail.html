@@ -5,4 +5,9 @@
 <h3> Purchaser : {{snack.purchaser}}</h3>
 <h3> Description : {{snack.description}}</h3>
 
+
+<h3></h3><a href="{% url 'snacks_update' snack.id%}">Update</a></h3>
+<h3></h3><a href="{% url 'snacks_delete' snack.id%}">Delete</a></h3>
+<h3>  <a href="{% url 'snacks_list' %}">Back</a> </h3>
+
 {% endblock %} 

@@ -3,14 +3,15 @@
 <h2> The Snacks List</h2>
 
 {% for snack in object_list %}
+
 <h3><a href="{% url 'snacks_detail' snack.pk %}">{{snack.title}}</a></h3>
 <button><a href="{% url 'snacks_update' snack.pk %}">Update</a></button>
 
 
-<!-- <a href="{% url 'snacks_detail' snack.id %}"><h3>{{snack.title}}</h3></a> -->
 
 
 
 {% endfor %}
+<h3>  <a href="{% url 'snacks_create' %}">Add new Snack</a></h3>
 
 {% endblock content%}
